@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
   }
-  
-  /* Clases para el elemento body */
+
+  /* Vista Splash */
+
+  /* Estilos para el elemento body */
 
   .vh100 {
     height: 100vh;
@@ -18,4 +20,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  /* Vista Principal */
+
+  /* Estilos al contenedor del logo y a este mismo*/
+
+  .navbar-brand {
+    padding: 0px 15px;
+  }
+
+  .navbar-brand img {
+    cursor: pointer;
+    width: 3em;
+  }
+
+  .social-media-name {
+    display: inline-block;
+    font-size: 1.5em;
+    color: red;
+    font-weight: 700;
+    line-height: 50px;
   }
