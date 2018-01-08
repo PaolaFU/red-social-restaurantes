@@ -7,7 +7,7 @@
 	 <!--Import Bootstrap.css-->
 	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
 	<!-- tab icon -->
-	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 	<!--font-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<!--Css-->
@@ -25,33 +25,70 @@
                 </div>
             </div>
         </section>
+        <!-- Login y sign up-->
         <section>
-            <!-- Login y sign up-->
             <div class="container-fluid">
                 <div class="row">
                         <!--mobile-->
                         <div class="col-xs-12 visible-xs">
                                 <div class="container-buttons buttons white-text"  align ="center">
-                                    <a href=" " type="button" class="btn btn-default button-login" id="signup">Sign up</a>
-                                    <a href="" type="button" class="btn btn-default  button-login" id="login">Log in</a>	
+                                    <a href=" " type="button" class="btn btn-default button-login" id="signup">Ingresa</a>
+                                    <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
                                 </div>	
                         </div>
                         <!--desktop-->
                         <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 hidden-xs">
                                 <div class="container-buttons-desktop buttons"  align ="center">
-                                    <a href=" " type="button" class="btn btn-default  button-login" id="signup">Sign up</a>
-                                    <a href="" type="button" class="btn btn-default button-login" id="login">Log in</a>
+                                    <a href=" " type="button" class="btn btn-default  button-login" id="signup">Ingresa</a>
+                                    <a href="" type="button" class="btn btn-default button-login" id="login">Registrarte</a>
                                     	
                                 </div>	
                         </div>
                 </div>
             </div>
+        
         </section>
-    
-        
-    
-        
-        
+
+        <!--Modales-->
+        <section>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                  <h4 id="title-modal" class="title-modal">Eres nuevo en Misky Perú </h4>
+                  <div id="modal-correo" class="modal-correo">
+                    <label>Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail">
+                  </div>
+                    
+                  <div id="modal-clave" class="modal-clave">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Ingresa contraseña"> 
+                  </div>
+                  <div id="modal-usuario" class="modal-usuario">
+                    <label>Usuario</label>
+                    <input type="usuario" class="form-control" id="usuario" placeholder="Ingresa un usuario"> 
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Segundo modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <h4 id="title-modal" class="title-modal"></h4>
+              <div id="modal-correo" class="modal-correo">
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail o usuario">
+              </div>
+                
+              <div id="modal-clave" class="modal-clave">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingresa contraseña"> 
+              </div>
+              
+            </div>
+          </div>
+        <section>
+            
+        </section>
         <!-- Import jQuery-->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <!-- bootstrap -->

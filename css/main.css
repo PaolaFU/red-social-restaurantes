@@ -59,4 +59,11 @@
 .buttons a:hover{
   color: #C8E64F;
 }
+/* Styles perfil.html */
+.portada{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
   
+}
