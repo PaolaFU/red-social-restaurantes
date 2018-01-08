@@ -4,3 +4,18 @@
     padding: 0;
   }
   
+  /* Clases para el elemento body */
+
+  .vh100 {
+    height: 100vh;
+  }
+
+  .background {
+    background-color: skyblue;
+  }
+
+  .flex-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
