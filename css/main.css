@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
   }
+
+
+
   
   /* Clases para el elemento body */
 
@@ -19,3 +22,41 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  /*-------------------Styles login------------*/
+  .logo-misky{
+    margin-top: 8%;
+  }
+
+  /*Style buttons-mobile*/
+.container-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30%;
+}
+/*Style butonns-desktop*/
+.container-buttons-desktop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10%;
+  
+}
+/*Seperation buttons-desktop*/
+.container-buttons-desktop .button-login{
+  margin-top: 20%;
+  
+}
+.button-login{
+  background: #68E41C;
+  border: none;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  color: white;
+ 
+}
+.buttons a:hover{
+  color: #C8E64F;
+}
+  
