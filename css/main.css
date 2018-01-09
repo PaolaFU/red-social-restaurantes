@@ -29,10 +29,17 @@
     align-items: center;
   }
 
+  .wood-background {
+    background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   /* Estilos al contenedor del logo y a este mismo*/
 
   .navbar-default {
-    background-color: rgb(136, 213, 76);
+    background-color: #88d54c;
+    border-color: #88d54c;
   }
 
   .brand-container {
@@ -86,3 +93,40 @@
   .hamburguer-menu {
     width: 20%;
   }
+
+ /* Secciones */
+
+/* Estilos a las columnas */
+
+ .padding-zero {
+   padding-right: 0;
+   padding-left: 0;
+ }
+
+/* Estilos a la sección */
+
+section {
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+ .column {
+  float:left;
+}
+
+/* Clearing float*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Estilos al panel */
+
+.panel-body .paragraph {
+  border-bottom: 1px solid black;
+}
+
+.panel-body .paragraph a {
+  color: blue;
+}
