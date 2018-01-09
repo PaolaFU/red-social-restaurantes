@@ -40,6 +40,7 @@
   .navbar-default {
     background-color: #88d54c;
     border-color: #88d54c;
+    margin-bottom: 0;
   }
 
   .brand-container {
@@ -105,28 +106,69 @@
 
 /* Estilos a la sección */
 
-section {
-  display: inline-block;
-  border-right: 1px solid white;
+.flex-container-section {
+  /* height: 83vh; */
 }
 
- .column {
-  float:left;
+.section-container {
+  padding-left: 0;
 }
 
-/* Clearing float*/
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.last-section-container {
+  padding-right: 0;
+  padding-left: 15px;
 }
+
 
 /* Estilos al panel */
 
+.panel-default {
+  border-color: #f16c25;
+}
+
+.panel-body {
+  word-wrap: break-word;
+  background-color: #f16c25;
+  border-color: #f16c25;
+}
+
 .panel-body .paragraph {
   border-bottom: 1px solid black;
+  line-height: 60px;
 }
 
 .panel-body .paragraph a {
-  color: blue;
+  color: #88d54c;
+  font-size: 1.1em;
+}
+
+/* Tercera sección */
+
+.main-view-third-section {
+  background-color: #f16c25;
+  border-color: #f16c25;
+}
+
+/* Cajas contenidas */
+
+.little-box {
+  width: 88%;
+}
+
+.food-image {
+  padding-top: 1em;
+  margin-bottom:1em;
+}
+
+.little-paragraph {
+  background-color: #fadd05;
+}
+
+.pizza-ad-paragraph {
+  margin-bottom: 1em;
+  word-wrap: break-word;
+}
+
+.pizza-link {
+  cursor: pointer;
 }
