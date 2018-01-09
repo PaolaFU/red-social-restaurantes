@@ -85,8 +85,10 @@
 									<textarea class="form-control text-area" id="exampleTextArea1" placeholder="Escribe una reseña"></textarea>
 						    </div>
 						    <!-- <br> -->
-						    <button type="submit" class="btn btn-default pull-right" disabled>Publicar</button>
+						    <button type="submit" class="btn btn-default pull-right" id="publishButton">Publicar</button>
 				      </form>
+						</div>
+						<div id="divs-container">
 						</div>
 					 </section>
 				</div>
@@ -125,11 +127,17 @@
 						<hr>
 						<span>o</span>
 						<hr>
-						<div class="">
+						<!-- <div class="">
 							<label>Carga tu imagen desde tu ordenador</label>
 							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myTextAreaModal">
 								<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
 							</button>
+						</div> -->
+						<div class="form-group">
+							<label for="uploadInputFile">Subir imagen</label>
+							<input type="file" id="uploadInputFile" accept="image/x-png,image/gif,image/jpeg">
+							<i class="fa fa-download" aria-hidden="true"></i>
+								<!-- <span class="glyphicon glyphicon-save" aria-hidden="true"></span> -->
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -139,8 +147,30 @@
 				</div>
 			</div>
 		</div>
-<!-- Import jQuery-->
-<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+		<!-- Import jQuery-->
+		<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+ // Initialize Firebase
+ var config = {
+   apiKey: "AIzaSyA9gRL5pF8NpON8KuMlS8Pd_dXP_UXI2Kc",
+   authDomain: "misky-peru-5e127.firebaseapp.com",
+   databaseURL: "https://misky-peru-5e127.firebaseio.com",
+   projectId: "misky-peru-5e127",
+   storageBucket: "",
+   messagingSenderId: "895715418066"
+ };
+ firebase.initializeApp(config);
+ var $databaseTable = firebase.database.ref('Imagenes');
+ $('#uploadInputFile').change(function() {
+	 if(this.files && this.files[0]) {
+		 var $file = new FileReader();
+		 $file.on('load', function() {
+			 var littleImage = $file.addClass();
+		 });
+	 }
+ });
+</script>
 <!-- bootstrap -->
 <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="../js/main-view.js"></script>

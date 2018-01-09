@@ -159,6 +159,17 @@
   margin-bottom: 0.8em;
 }
 
+.divText {
+  background-color: #FFF;
+  width: 90%;
+  height: 90px;
+  color: #000;
+  font-size: 1.5em;
+  margin: 0 auto 30px;
+  padding: 15px 15px 0;
+  word-wrap: break-word;
+}
+
 /* Tercera sección */
 
 .main-view-third-section {
