@@ -149,6 +149,7 @@
   background-color: white;
   overflow: auto;
   padding: 0.7em;
+  margin-top: 20px;
 }
 
 .text-area {
@@ -208,4 +209,33 @@
 .picture {
   width: 55em;
   height: auto;
+}
+
+
+@media (min-width: 768px) {
+
+.flex-container {
+  padding: 10px 15px;
+}
+
+.brand-container {
+  font-size: 1.4em;
+}
+
+.social-media-list {
+  font-size: 1.3em;
+}
+
+.panel-body .paragraph {
+  font-size: 1.3em;
+  line-height: 60px;
+  }
+
+  .download-button, .publishButton {
+    font-size: 1.2em;
+  }
+
+  .text-area {
+    font-size: 1.3em;
+  }
 }
