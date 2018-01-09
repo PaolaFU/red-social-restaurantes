@@ -19,8 +19,13 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                    <!-- mobile -->
+                    <div class="col-xs-8 col-xs-offset-2 visible-xs">
                             <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
+                    </div>
+                    <!-- desktop -->
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 hidden-xs">
+                        <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
                     </div>
                 </div>
             </div>
@@ -31,10 +36,47 @@
                 <div class="row">
                         <!--mobile-->
                         <div class="col-xs-12 visible-xs">
-                                <div class="container-buttons buttons white-text"  align ="center">
-                                    <a href=" " type="button" class="btn btn-default button-login" id="signup">Ingresa</a>
-                                    <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
-                                </div>	
+                                <div class="container-login"  align ="center">
+                                        <form class="col-xs-12 containers-form">
+                                                <div class="input-group col-xs-12">
+                                                    <input id="user-email" type="text" class="form-control" name="email" placeholder="Correo o usuario">
+                                                </div>
+                                                
+                                                <div class="input-group col-xs-12">
+                                                    <input id="password" type="text" class="form-control" name="email" placeholder="password">
+                                                </div>
+                                                <div id="error-message"></div>
+                                                <div class="checkbox " align=center>
+                                                        <label>
+                                                            <input type="checkbox"> Recordar mis datos <a href="">¿Olvidate tu contraseña?</a> 
+                                                        </label>
+                                                </div>
+                                                <a href="" type="button" class="btn btn-default button-login" id="signup">Ingresar</a>
+                                        </form>
+                                        
+                                 </div>
+                                
+                    	
+                                <div class="container-register" align = "center">
+                                    
+                                    <form class="col-xs-12 containers-form">
+                                            <h4>¿Eres nuevo en Misky Perú </h4>
+                                            <h4><strong>Registrate</strong></h4>
+                                            <div class="input-group col-xs-12">
+                                                <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo">
+                                            </div>
+                                            
+                                            <div class="input-group col-xs-12">
+                                                <input id="email-register" type="text" class="form-control" name="email" placeholder="Correo electrónico">
+                                            </div>
+                                            <div class="input-group col-xs-12">
+                                                <input id="password" type="text" class="form-control" name="email" placeholder="password">
+                                            </div>
+                                            <div id="error-message"></div>
+                                            <br>
+                                            <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
+                                    </form>
+                                </div>
                         </div>
                         <!--desktop-->
                         <div class="col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 hidden-xs">
@@ -49,46 +91,7 @@
         
         </section>
 
-        <!--Modales-->
-        <section>
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                  <h4 id="title-modal" class="title-modal">Eres nuevo en Misky Perú </h4>
-                  <div id="modal-correo" class="modal-correo">
-                    <label>Correo electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail">
-                  </div>
-                    
-                  <div id="modal-clave" class="modal-clave">
-                    <label>Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Ingresa contraseña"> 
-                  </div>
-                  <div id="modal-usuario" class="modal-usuario">
-                    <label>Usuario</label>
-                    <input type="usuario" class="form-control" id="usuario" placeholder="Ingresa un usuario"> 
-                  </div>
-                </div>
-              </div>
-        </section>
-        <!-- Segundo modal -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-              <h4 id="title-modal" class="title-modal"></h4>
-              <div id="modal-correo" class="modal-correo">
-                <label>Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail o usuario">
-              </div>
-                
-              <div id="modal-clave" class="modal-clave">
-                <label>Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingresa contraseña"> 
-              </div>
-              
-            </div>
-          </div>
-        <section>
-            
-        </section>
+        
         <!-- Import jQuery-->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
         <!-- bootstrap -->

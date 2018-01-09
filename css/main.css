@@ -24,35 +24,17 @@
   }
 
   /*-------------------Styles login------------*/
-  .logo-misky{
-    margin-top: 8%;
-  }
+.containers-form{
+  background-color : #C8E64F;
+  padding: 0.5em;
+  margin-top: 5%;
+}
 
-  /*Style buttons-mobile*/
-.container-buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 30%;
-}
-/*Style butonns-desktop*/
-.container-buttons-desktop{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 10%;
-  
-}
-/*Seperation buttons-desktop*/
-.container-buttons-desktop .button-login{
-  margin-top: 20%;
-  
-}
 .button-login{
   background: #68E41C;
   border: none;
   letter-spacing: 0.1em;
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
  
 }
