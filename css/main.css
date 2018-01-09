@@ -25,13 +25,13 @@
 
   /*-------------------Styles login------------*/
 .containers-form{
-  background-color : #C8E64F;
+  background-color : #D3FAB8;
   padding: 0.5em;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .button-login{
-  background: #68E41C;
+  background: #96F662;
   border: none;
   letter-spacing: 0.1em;
   font-size: 1em;
@@ -41,6 +41,9 @@
 .buttons a:hover{
   color: #C8E64F;
 }
+.logo-desktop, .form-desktop{
+  margin-top: 8em;
+}
 /* Styles perfil.html */
 .portada{
   display: flex;
@@ -49,3 +52,4 @@
   max-width: 100%;
   
 }
+
