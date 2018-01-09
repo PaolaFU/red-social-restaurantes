@@ -202,3 +202,10 @@
 .pizza-link {
   cursor: pointer;
 }
+
+/* Pequeñas imagenes */
+
+.picture {
+  width: 55em;
+  height: auto;
+}

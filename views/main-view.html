@@ -165,9 +165,20 @@
  $('#uploadInputFile').change(function() {
 	 if(this.files && this.files[0]) {
 		 var $file = new FileReader();
-		 $file.on('load', function() {
-			 var littleImage = $file.addClass();
+		 $file.on('load', function(event) {
+			 var $littleImage = $file.addClass('picture');
+			 $databaseTable.push({
+         // Dato que contendra la imagen original del usuario
+				 urlLarge:event.target.result
+				 // Dato que contendra la imagen modificada
+				 url: $littleImage
+			 });
+			 var $image = '</img src="">';
+			 var textArea = $('#exampleTextArea1');
+			 $image.appendTo(textArea);
+			 $image.attr('src', $littleImage);
 		 });
+		 $file.readAsDataURL(this.files[0]);
 	 }
  });
 </script>
