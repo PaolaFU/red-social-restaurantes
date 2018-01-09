@@ -135,6 +135,7 @@
 .panel-body .paragraph {
   border-bottom: 1px solid black;
   line-height: 60px;
+  line-height: 40px;
 }
 
 .panel-body .paragraph a {
@@ -142,11 +143,28 @@
   font-size: 1.1em;
 }
 
+/* Segunda sección */
+
+.user-post-area {
+  background-color: white;
+  overflow: auto;
+  padding: 0.7em;
+}
+
+.text-area {
+  margin-top: 1em;
+}
+
+.download-button {
+  margin-bottom: 0.8em;
+}
+
 /* Tercera sección */
 
 .main-view-third-section {
   background-color: #f16c25;
   border-color: #f16c25;
+  padding: 1em 0.5em 2.5em;
 }
 
 /* Cajas contenidas */
@@ -162,6 +180,7 @@
 
 .little-paragraph {
   background-color: #fadd05;
+  word-wrap: break-word;
 }
 
 .pizza-ad-paragraph {
