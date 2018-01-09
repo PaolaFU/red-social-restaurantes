@@ -45,11 +45,6 @@
   margin-top: 8em;
 }
 /* Styles perfil.html */
-.portada{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  
+.backgroundImg{
+  background-color: #96F662;
 }
-

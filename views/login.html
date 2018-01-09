@@ -23,6 +23,11 @@
                     <div class="col-xs-8 col-xs-offset-2 visible-xs">
                         <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
                     </div>
+                    <!--desktop -->
+                        
+                    <div class="col-xs-4 hidden-xs logo-desktop" align ="center">
+                        <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
+                    </div>
                     
                 </div>
             </div>
@@ -32,15 +37,16 @@
             <div class="container-fluid">
                 <div class="row">
                         <!--mobile-->
-                        <div class="col-xs-12 visible-xs ">
+                        <div class="col-xs-12">
+                                <!-- Login -->
                                 <div class="container-login"  align ="center">
                                         <form class="col-xs-12 containers-form">
                                                 <div class="input-group col-xs-12">
-                                                    <input id="user-email" type="text" class="form-control" name="email" placeholder="Correo o usuario">
+                                                    <input id="email-login" type="text" class="form-control" name="email" placeholder="Correo electrónico">
                                                 </div>
                                                 
                                                 <div class="input-group col-xs-12">
-                                                    <input id="password" type="text" class="form-control" name="email" placeholder="password">
+                                                    <input id="password-login" name="password" type="password" value="" class="form-control"  placeholder="password">
                                                 </div>
                                                 <div id="error-message"></div>
                                                 <div class="checkbox " align=center>
@@ -48,10 +54,11 @@
                                                             <input type="checkbox"> Recordar mis datos <a href="">¿Olvidate tu contraseña?</a> 
                                                         </label>
                                                 </div>
-                                                <a href="" type="button" class="btn btn-default button-login" id="signup">Ingresar</a>
+                                                <a href="" type="button" class="btn btn-default button-login" id="btn-login">Ingresar</a>
                                         </form>
                                         
                                  </div>
+                                 <!-- registro -->
                                 <div class="container-register" align = "center">
                                     
                                     <form class="col-xs-12 containers-form">
@@ -65,15 +72,15 @@
                                                 <input id="email-register" type="text" class="form-control" name="email" placeholder="Correo electrónico">
                                             </div>
                                             <div class="input-group col-xs-12">
-                                                <input id="password" type="text" class="form-control" name="email" placeholder="password">
+                                                <input id="password-register" type="text" class="form-control" name="email" placeholder="password">
                                             </div>
                                             <div id="error-message"></div>
                                             
-                                            <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
+                                            <a href="" type="button" class="btn btn-default  button-login" id="btn-egister">Registrarte</a>	
                                     </form>
                                 </div>
                         </div>
-                        <!--desktop-->
+                        <!--desktop
                         
                         <div class="col-xs-6 hidden-xs logo-desktop" align ="center">
                             <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
@@ -82,7 +89,7 @@
                                 <div class="container-login"  align ="center">
                                         <form class="col-xs-12 containers-form">
                                                 <div class="input-group col-xs-12">
-                                                    <input id="user-email" type="text" class="form-control" name="email" placeholder="Correo o usuario">
+                                                    <input id="email-login" type="text" class="form-control" name="email" placeholder="Correo o usuario">
                                                 </div>
                                                 
                                                 <div class="input-group col-xs-12">
@@ -118,7 +125,7 @@
                                             <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
                                     </form>
                                 </div>
-                        </div>
+                        </div> -->
                 </div>
             </div>
         
@@ -127,10 +134,28 @@
         
         <!-- Import jQuery-->
         <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+
+        <!-- Firebase -->
+        
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCdxx880m4Ezk_Dlc84mE2zIrMe2lzH2Ek",
+            authDomain: "misky-peru-57ca6.firebaseapp.com",
+            databaseURL: "https://misky-peru-57ca6.firebaseio.com",
+            projectId: "misky-peru-57ca6",
+            storageBucket: "misky-peru-57ca6.appspot.com",
+            messagingSenderId: "157888336080"
+        };
+        firebase.initializeApp(config);
+        </script>
+
+        
         <!-- bootstrap -->
         <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 
-        <script src="../js/register.js"></script>
+        <script src=""></script>
         
     </body>
 </html>
