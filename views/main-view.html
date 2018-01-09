@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	 <!--Import Bootstrap.css-->
+	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+	<!-- tab icon -->
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+	<!--Css-->
+	<link rel="stylesheet" href="../css/main.css">
+	<title>Misky Perú</title>
+</head>
+<!-- Contenido de la página -->
+<body class="wood-background">
+	<!-- Header -->
+	<header>
+			<!-- Barra de Navegación -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid flex-container">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header brand-container">
+					<a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="Logo de Misky Perú" class="img-responsive"></a>
+					<div class="social-media-name">Misky Perú</div>
+				</div>
+				<!-- Form -->
+				<div class="search-input">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Buscar">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">Go!</button>
+						</span>
+					</div><!-- /input-group -->
+				</div>
+
+				<ul class="social-media-list pull-right text-center">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Perfil</a></li>
+					<li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Sobre nosotros</a></li>
+							<li><a href="#">Configuración</a></li>
+							<li><a href="#">Salir</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<!-- Secciones -->
+	<div class="flex-container-section vh100">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Primera Sección -->
+				<div class="col-xs-3 section-container">
+					<section class="text-center">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<p class="paragraph"><a href="#">Noticias</a></p>
+								<p class="paragraph"><a href="#">Tus reseñas</a></p>
+								<p class="paragraph"><a href="#">Amigos/Seguidores</a></p>
+								<p class="paragraph"><a href="#">Crea tu grupo</a></p>
+								<p class="paragraph"><a href="#">Contáctanos</a></p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- Segunda Sección -->
+				<div class="col-xs-6 section-container">
+					<section>
+						<!-- Elemento div donde el usuario escribirá el mensaje-->
+						<div class="user-post-area">
+							<button type="button" class="btn btn-default pull-right download-button" data-toggle="modal" data-target="#myTextAreaModal">
+								<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+							</button>
+							<form>
+								<div class="form-group">
+									<textarea class="form-control text-area" id="exampleTextArea1" placeholder="Escribe una reseña"></textarea>
+						    </div>
+						    <!-- <br> -->
+						    <button type="submit" class="btn btn-default pull-right" disabled>Publicar</button>
+				      </form>
+						</div>
+					 </section>
+				</div>
+				<!-- Tercera Sección -->
+				<div class="col-xs-3 last-section-container">
+					<section class="main-view-third-section">
+						<div class="little-box top-five-box center-block">
+							<img src="../assets/img/top.jpg" alt="Top 5 Mejores Platos Peruanos" class="img-responsive food-image">
+							<p class=" little-paragraph">Haz click a la imagen para ver nuestro top de los 5 mejores platos peruanos de la semana.</p>
+						</div>
+						<div class="little-box pizza-ad center-block">
+							<img src="../assets/img/pizza.jpeg" alt="Anuncio sobre una pizza" class="img-responsive food-image">
+							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una rica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
+						</div>
+					</section>
+				</div>
+			 </div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myTextAreaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Sube una foto</h4>
+					</div>
+					<div class="modal-body">
+						<p>Mediante</p>
+						<form>
+							<div class="form-group">
+								<label for="exampleUrl">URL</label>
+								<input type="email" class="form-control" id="exampleUrl" placeholder="Inserta el link aquí">
+							</div>
+						</form>
+						<hr>
+						<span>o</span>
+						<hr>
+						<div class="">
+							<label>Carga tu imagen desde tu ordenador</label>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myTextAreaModal">
+								<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Import jQuery-->
+<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/main-view.js"></script>
+</body>
+</html>
