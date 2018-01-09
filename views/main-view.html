@@ -58,6 +58,7 @@
 	<div class="flex-container-section">
 		<div class="container-fluid">
 			<div class="row">
+				<!-- Primera Sección -->
 				<div class="col-xs-3 section-container">
 					<section class="text-center">
 						<div class="panel panel-default">
@@ -71,11 +72,25 @@
 						</div>
 					</section>
 				</div>
+				<!-- Segunda Sección -->
 				<div class="col-xs-6 section-container">
 					<section>
-
-					</section>
+						<!-- Elemento div donde el usuario escribirá el mensaje-->
+						<div class="user-message">
+							<form>
+								<div class="form-group">
+									<textarea class="form-control" id="exampleTextArea1" placeholder="Escribe una reseña"></textarea>
+						    </div>
+						    <hr>
+						    <button type="submit" class="btn btn-default" disabled>Publicar</button>
+				      </form>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myTextAreaModal">
+								<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+							</button>
+						</div>
+					 </section>
 				</div>
+				<!-- Tercera Sección -->
 				<div class="col-xs-3 last-section-container">
 					<section class="main-view-third-section">
 						<div class="little-box top-five-box center-block">
@@ -84,11 +99,44 @@
 						</div>
 						<div class="little-box pizza-ad center-block">
 							<img src="../assets/img/pizza.jpeg" alt="Anuncio sobre una pizza" class="img-responsive food-image">
-							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una reica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
+							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una rica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
 						</div>
 					</section>
 				</div>
 			 </div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myTextAreaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Sube una foto</h4>
+					</div>
+					<div class="modal-body">
+						<p>Mediante</p>
+						<form>
+							<div class="form-group">
+								<label for="exampleUrl">URL</label>
+								<input type="email" class="form-control" id="exampleUrl" placeholder="Inserta el link aquí">
+							</div>
+						</form>
+						<hr>
+						<span>o</span>
+						<hr>
+						<div class="">
+							<label>Carga tu imagen desde tu ordenador</label>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myTextAreaModal">
+								<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
 			</div>
 		</div>
 <!-- Import jQuery-->
