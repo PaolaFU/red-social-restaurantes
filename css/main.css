@@ -24,7 +24,21 @@
 
   /* Vista Principal */
 
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
   /* Estilos al contenedor del logo y a este mismo*/
+
+  .navbar-default {
+    background-color: rgb(136, 213, 76);
+  }
+
+  .brand-container {
+    width: 42%;
+    display: inline-block;
+  }
 
   .navbar-brand {
     padding: 0px 15px;
@@ -35,10 +49,40 @@
     width: 3em;
   }
 
+  .search-input {
+    display: inline-block;
+    width: 35%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
   .social-media-name {
     display: inline-block;
     font-size: 1.5em;
     color: red;
     font-weight: 700;
     line-height: 50px;
+  }
+
+  .social-media-list {
+    display: inline-block;
+    line-height: 50px;
+    margin-bottom: 0;
+    width: 35%;
+  }
+
+  .social-media-list li {
+    display: inline-block;
+    margin-right: 0.8em;
+  }
+
+  .social-media-list a {
+    color: red;
+    display: inline-block;
+    list-style: none;
+    width: 30%;
+  }
+
+  .hamburguer-menu {
+    width: 20%;
   }
