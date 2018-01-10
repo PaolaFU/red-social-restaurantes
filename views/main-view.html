@@ -42,38 +42,34 @@
 					</div>
 					<!-- /input-group -->
 				</div>
-
+				<!-- Opciones de Navegación -->
 				<ul class="social-media-list pull-right text-center">
-					<li>
-						<a href="#">Inicio</a>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="perfil.html">Perfil</a></li>
+					<li class="dropdown" id="dropdown">
+						<a href="#" class="dropdown-toggle" id="followers" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right" id="dropdown-menu-followers">
+						  <li id="liNewFriend1" class=""><a href="#"><img src="../assets/img/user1_720.jpg" class="img-responsive little-image" alt="Nueva amiga"><span>Ana Kowalski<br>quiere ser tu amiga</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton1">Confirmar amistad</button></div></a></li>
+						  <li id="liNewFriend2" class=""><a href="#"><img src="../assets/img/user2_720.jpg" class="img-responsive little-image" alt="Nueva amigo"><span>Ricardo Mon-<br>taner quiere ser tu amigo</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton2">Confirmar amistad</button></div></a></li>
+						</ul>
 					</li>
-					<li>
-						<a href="../views/perfil.html">Perfil</a>
-					</li>
-					<li>
-						<a href="../views/seguir.html">
-							<i class="fa fa-users fa-lg" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-bell fa-lg" aria-hidden="true"></i>
-						</a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" id="notifications"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right">
+						  <li><a href="#"><span class="glyphicon glyphicon-alert orange-icon" aria-hidden="true"></span> Tienes un nuevo mensaje</a></li>
+						  <li><a href="#"><img src="../assets/img/usuario_480.jpg" alt="Usuario1" class="img-responsive little-image"><span>Micaela ha dado like<br>a tu publicación</span></a></li>
+						  <li><a href="#">Tienes dos solicitudes de amistad</a></li>
+						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li>
-								<a href="#">Sobre nosotros</a>
-							</li>
-							<li>
-								<a href="#">Configuración</a>
-							</li>
-							<li>
-								<a href="#">Salir</a>
-							</li>
+							<li><a href="#">Sobre nosotros</a></li>
+							<li><a href="#">Configuración</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="login.html">Salir</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -82,29 +78,19 @@
 		</nav>
 	</header>
 	<!-- Secciones -->
-	<div class="flex-container-section vh100">
+	<div class=" vh100 flex-container-section">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- Primera Sección -->
 				<div class="col-xs-3 section-container">
 					<section class="text-center">
 						<div class="panel panel-default">
-							<div class="panel-body">
-								<p class="paragraph">
-									<a href="#">Noticias</a>
-								</p>
-								<p class="paragraph">
-									<a href="#">Tus reseñas</a>
-								</p>
-								<p class="paragraph">
-									<a href="#">Amigos/Seguidores</a>
-								</p>
-								<p class="paragraph">
-									<a href="#">Crea tu grupo</a>
-								</p>
-								<p class="paragraph">
-									<a href="#">Contáctanos</a>
-								</p>
+							<div class="panel-body panel-cream">
+								<p class="paragraph"><a href="#">Noticias</a></p>
+								<p class="paragraph"><a href="#">Tus reseñas</a></p>
+								<p class="paragraph"><a href="seguir.html">Amigos/Seguidores</a></p>
+								<p class="paragraph"><a href="#">Crea tu grupo</a></p>
+								<p class="paragraph"><a href="#">Contáctanos</a></p>
 							</div>
 						</div>
 					</section>
@@ -114,18 +100,29 @@
 					<section>
 						<!-- Elemento div donde el usuario escribirá el mensaje-->
 						<div class="user-post-area">
-							<button type="button" class="btn btn-default pull-right download-button" data-toggle="modal" data-target="#myTextAreaModal">
+							<button type="button" class="btn btn-default download-button pull-right" data-toggle="modal" data-target="#myTextAreaModal">
 								<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
 							</button>
 							<form>
 								<div class="form-group">
 									<textarea class="form-control text-area" id="exampleTextArea1" placeholder="Escribe una reseña"></textarea>
+<<<<<<< HEAD
 								</div>
 								<!-- <br> -->
 								<button type="submit" class="btn btn-default pull-right" id="publishButton">Publicar</button>
 							</form>
+=======
+									<!-- Input donde se insertara la imagen -->
+									<!-- <br>
+									<input type="image" id="inputImage"> -->
+						    </div>
+						    <button type="submit" class="btn btn-default pull-right publish-button" id="publishButton" disabled>Publicar</button>
+				      </form>
+>>>>>>> aafe3960a94b05bc0cb20c83cb1952a74f026899
 						</div>
+						<!-- Contenedor de los posts -->
 						<div id="divs-container">
+
 						</div>
 					</section>
 				</div>
@@ -146,6 +143,7 @@
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="myTextAreaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -179,6 +177,27 @@
 						<input type="file" id="uploadInputFile" accept="image/x-png,image/gif,image/jpeg">
 						<i class="fa fa-download" aria-hidden="true"></i>
 						<!-- <span class="glyphicon glyphicon-save" aria-hidden="true"></span> -->
+=======
+		<!-- Modal -->
+		<div class="modal fade" id="myTextAreaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Sube una foto</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputFile">Sube tu imagen aquí</label>
+								<input type="file" id="exampleInputFile">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary" id="button-save-changes">Save changes</button>
+>>>>>>> aafe3960a94b05bc0cb20c83cb1952a74f026899
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -187,6 +206,7 @@
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 	</div>
 	<!-- Import jQuery-->
 	<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
@@ -215,6 +235,27 @@
 	<!-- bootstrap -->
 	<script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/main-view.js"></script>
+=======
+<!-- Import jQuery-->
+<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9gRL5pF8NpON8KuMlS8Pd_dXP_UXI2Kc",
+    authDomain: "misky-peru-5e127.firebaseapp.com",
+    databaseURL: "https://misky-peru-5e127.firebaseio.com",
+    projectId: "misky-peru-5e127",
+    storageBucket: "misky-peru-5e127.appspot.com",
+    messagingSenderId: "895715418066"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- bootstrap -->
+<script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/main-view.js"></script>
+>>>>>>> aafe3960a94b05bc0cb20c83cb1952a74f026899
 </body>
 
 </html>
