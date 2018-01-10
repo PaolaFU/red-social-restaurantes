@@ -65,8 +65,8 @@
   /* Estilos al contenedor del logo y a este mismo*/
 
   .navbar-default {
-    background-color: #88d54c;
-    border-color: #88d54c;
+    background-color: #ceaa89;
+    /*border-color: #582a0b;*/
     margin-bottom: 0;
   }
 
@@ -566,5 +566,8 @@ img:hover {
 
 .btn-seguir{
   
-  background-color: #2a974b;
+  background-color: #65eb8d;
 } 
+.panel-seguidores{
+  background: rgb(211, 235, 210);
+}
