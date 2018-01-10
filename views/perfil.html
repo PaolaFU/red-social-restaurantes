@@ -1,168 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	 <!--Import Bootstrap.css-->
-	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-	<!-- tab icon -->
-	<link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
-	 <!--font-->
-   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!--Css-->
-	<link rel="stylesheet" href="../css/main.css">
-	<title>Misky Perú</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Bootstrap.css-->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!-- tab icon -->
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!--Css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Misky Perú</title>
 </head>
 <!-- Login -->
+
 <body>
   <!-- Header -->
-	<header>
-			<!-- Barra de Navegación -->
-		<nav class="navbar navbar-default">
-			<div class="container-fluid flex-container">
-	      <!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header brand-container">
-					<a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="Logo de Misky Perú" class="img-responsive"></a>
-					<div class="social-media-name">Misky Perú</div>
-				</div>
-				<!-- Form -->
-				<div class="search-input">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Buscar">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button">Go!</button>
-						</span>
-					</div><!-- /input-group -->
-				</div>
+  <header>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid flex-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header brand-container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/img/logo.png" alt="Logo de Misky Perú" class="img-responsive">
+          </a>
+          <div class="social-media-name">Misky Perú</div>
+        </div>
+        <!-- Form -->
+        <div class="search-input">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+          <!-- /input-group -->
+        </div>
 
-				<ul class="social-media-list pull-right text-center">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="../views/perfil.html">Perfil</a></li>
-					<li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
-						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="#">Sobre nosotros</a></li>
-							<li><a href="#">Configuración</a></li>
-							<li><a href="#">Salir</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!-- /.container-fluid -->
-		</nav>
-	</header>
+        <ul class="social-media-list pull-right text-center">
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="../views/perfil.html">Perfil</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-users fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="#">Sobre nosotros</a>
+              </li>
+              <li>
+                <a href="#">Configuración</a>
+              </li>
+              <li>
+                <a href="#">Salir</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
   <section>
     <div class="container">
       <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-4">
-              <!--Primer panel -->
-           <div class="panel rounded shadow">
-                  <div class="panel-body">
-              
-                      <ul class="list-unstyled">
-                          <li class="text-center">
-                              <img data-no-retina="" class="img-circle img-responsive img-bordered-primary" src="../assets/img/usuario.jpg" alt="John Doe">
-                          </li>
-                          <li class="text-center">
-                              <h4 class="text-capitalize name">Layra Mendez</h4>
-                              <p class="text-muted text-capitalize">Amante de la comida rica</p>
-                          </li>
-                          <li>
-                              <p><strong>Presentación</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quidem suscipit ad, incidunt, natus quisquam ullam blanditiis neque dicta ducimus dolore facilis dolor magni. Quis in aperiam quos id voluptatum.</p>
-                          </li>
-                 
-                      </ul>
-                  </div>
-              </div>
+        <div class="col-lg-3 col-md-3 col-sm-4">
+          <!--Primer panel -->
+          <div class="panel rounded shadow">
+            <div class="panel-body">
+
+              <ul class="list-unstyled">
+                <li class="text-center">
+                  <img data-no-retina="" class="img-circle img-responsive img-bordered-primary" src="../assets/img/usuario.jpg" alt="John Doe">
+                </li>
+                <li class="text-center">
+                  <h4 class="text-capitalize name">Layra Mendez</h4>
+                  <p class="text-muted text-capitalize">Amante de la comida rica</p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Presentación</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quidem suscipit
+                    ad, incidunt, natus quisquam ullam blanditiis neque dicta ducimus dolore facilis dolor magni. Quis in
+                    aperiam quos id voluptatum.</p>
+                </li>
+
+              </ul>
+            </div>
           </div>
+        </div>
 
         <div class="col-lg-9 col-md-9 col-sm-8">
-  
+
           <div class="profile-cover">
             <div class="cover rounded shadow no-overflow">
               <div class="inner-cover">
                 <!-- Mobile- menú hamburguesa-->
                 <div class="btn-group cover-menu-mobile hidden-lg hidden-md">
                   <button type="button" class="btn btn-theme btn-sm dropdown-toggle" data-toggle="dropdown">
-                          <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                   </button>
                   <ul class="dropdown-menu pull-right no-border" role="menu">
-                      <li class="active">
-                          <a id="theme-1" href="#">
-                              <i class="fa fa-fw fa-clock-o"></i>
-                              <span>Mis Restaurantes</span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              <i class="fa fa-fw fa-user"></i>
-                              <span>Platos preferidos</span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              <i class="fa fa-fw fa-photo"></i>
-                              <span> Mis Fotos</span>
-                              <small>(38)</small>
-                          </a>
-                      </li>
-                      <li>
-                          <a id="friends-1" href="#">
-                              <i class="fa fa-fw fa-users"></i>
-                              <span> Amigos </span>
-                              <small>(19)</small>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#">
-                              <i class="fa fa-fw fa-envelope"></i>
-                              <span>Mensajes</span>
-                              <small>(7 nuevos)</small>
-                          </a>
-                      </li>
+                    <li class="active">
+                      <a id="theme-1" href="#">
+                        <i class="fa fa-fw fa-clock-o"></i>
+                        <span>Mis Restaurantes</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-fw fa-user"></i>
+                        <span>Platos preferidos</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-fw fa-photo"></i>
+                        <span> Mis Fotos</span>
+                        <small>(38)</small>
+                      </a>
+                    </li>
+                    <li>
+                      <a id="friends-1" href="#">
+                        <i class="fa fa-fw fa-users"></i>
+                        <span> Amigos </span>
+                        <small>(19)</small>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-fw fa-envelope"></i>
+                        <span>Mensajes</span>
+                        <small>(7 nuevos)</small>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <!-- imagen portada -->
-                <img src="http://noticias.universia.net.mx/net/images/cultura/m/me/mej/mejor-comida-del-mundo.jpg" class="img-responsive full-width" alt="cover" style="max-height:200px;">
+                <img src="http://noticias.universia.net.mx/net/images/cultura/m/me/mej/mejor-comida-del-mundo.jpg" class="img-responsive full-width"
+                  alt="cover" style="max-height:200px;">
               </div>
               <!-- desktop -->
               <ul class="list-unstyled no-padding hidden-sm hidden-xs cover-menu">
                 <li id="theme-2" class="active">
-                          <a href="#">
-                              <i class="fa fa-fw fa-clock-o"></i>
-                              <span>Mis Restaurantes</span>
-                          </a>
+                  <a href="#">
+                    <i class="fa fa-fw fa-clock-o"></i>
+                    <span>Mis Restaurantes</span>
+                  </a>
                 </li>
                 <li>
-                          <a href="#">
-                              <i class="fa fa-fw fa-user"></i>
-                              <span>Plato Preferidos</span>
-                          </a>
+                  <a href="#">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span>Plato Preferidos</span>
+                  </a>
                 </li>
                 <li id="fotos">
-                          <a href="#">
-                              <i class="fa fa-fw fa-photo"></i>
-                              <span>Mis fotos</span>
-                              <small>(38)</small>
-                          </a>
+                  <a href="#">
+                    <i class="fa fa-fw fa-photo"></i>
+                    <span>Mis fotos</span>
+                    <small>(38)</small>
+                  </a>
                 </li>
                 <li>
-                          <a id="friends-2" href="#">
-                              <i class="fa fa-fw fa-users"></i>
-                              <span> Amigos </span>
-                              <small>(19)</small>
-                          </a>
+                  <a id="friends-2" href="#">
+                    <i class="fa fa-fw fa-users"></i>
+                    <span> Amigos </span>
+                    <small>(19)</small>
+                  </a>
                 </li>
-  
+
               </ul>
             </div>
-            
+
           </div>
           <!-- Postear -->
-      
+
           <div class="panel rounded shadow">
             <textarea class="txt form-control input-lg no-border" id="comment" placeholder="Que estas haciendo?..."></textarea>
             <button type="button" id="npost" class="btn btn-success pull-right mt-5">Postear</button>
@@ -191,7 +222,7 @@
             <!-- contenedor comentarios -->
             <div id="cont"></div>
           </div>
-  
+
           <!--Imagenes posteadas y comentarios -->
           <div class="">
             <div class="row">
@@ -214,21 +245,21 @@
                       <a href="#" class="text-white h4">
                         <i class="fa fa-heart"></i> 100</a>
                     </div>
-                    
+
                     <div class="clearfix"></div>
                   </div>
                   <!-- alguna imagen posteada-->
                   <div class="panel-body no-padding">
                     <img src="../assets/img/costillitas.jpg" alt="..." class="img-responsive full-width">
                     <div class="inner-all block">
-                      
+
                       <a href="#">7 comentarios</a>
                     </div>
-                    
+
                     <div class="line no-margin"></div>
-                    
+
                     <div class="media inner-all no-margin">
-                       <!--Imagen de perfil-primer cometario--> 
+                      <!--Imagen de perfil-primer cometario-->
                       <div class="pull-left">
                         <img src="../assets/img/user3.jpg" alt="..." class="img-post2">
                       </div>
@@ -240,20 +271,20 @@
                           <span class="text-danger">04 de Enero, 2018</span>
                         </em>
                       </div>
-                      
+
                     </div>
-                    
+
                     <div class="line no-margin"></div>
                     <img src="../assets/img/chillis.png" alt="..." class="img-responsive full-width">
                     <div class="inner-all block">
-                      
+
                       <a href="#">7 comentarios</a>
                     </div>
-                    
+
                     <div class="line no-margin"></div>
-                    
+
                     <div class="media inner-all no-margin">
-                      <!--Segunda imagen de perfil-->  
+                      <!--Segunda imagen de perfil-->
                       <div class="pull-left">
                         <img src="../assets/img/user4.jpg" alt="..." class="img-post2">
                       </div>
@@ -265,9 +296,9 @@
                           <span class="text-danger">03 de Enero,2018 </span>
                         </em>
                       </div>
-                      
+
                     </div>
-                    
+
                   </div>
                   <!-- Agregar comentario -->
                   <div class="panel-footer">
@@ -278,7 +309,7 @@
                       </div>
                     </form>
                   </div>
-                  
+
                 </div>
                 <!-- Panel de la derecha -->
               </div>
@@ -296,12 +327,12 @@
                         </div>
                       </div>
                     </div>
-                    
+
                     <div class="pull-right">
                       <a href="#" class="text-white h4">
                         <i class="fa fa-heart"></i> 180</a>
                     </div>
-                    
+
                     <div class="clearfix"></div>
                   </div>
                   <!-- Agregar recomendaciones -->
@@ -313,15 +344,15 @@
                         reprehenderit cum est ab similique magnam molestias aperiam voluptatibus quia aliquid! Sed, minima.
                       </p>
                       <blockquote class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, delectus!</blockquote>
-  
+
                       <img src="../assets/img/palanchinke.jpg" alt="..." width="100">
                       <img src="../assets/img/sushi.png" alt="..." width="100">
                       <img src="../assets/img/mi barrunto.jpg" alt="..." width="100">
                       <img src="../assets/img/domoSaltado.png" alt="..." width="100">
                     </div>
-                    
+
                     <div id="box-purple" class="inner-all bg-success">
-                  
+
                       <a href="#">7 comentarios</a>
                     </div>
                   </div>
@@ -339,9 +370,9 @@
                           <span class="text-danger"> 01 de Enero, 2018</span>
                         </em>
                       </div>
-                      
+
                     </div>
-                    
+
                     <div class="line no-margin"></div>
                     <!--Imagen usuario-->
                     <div class="media inner-all no-margin">
@@ -356,36 +387,37 @@
                           <span class="text-danger">06 de Enero, 2018</span>
                         </em>
                       </div>
-                      
+
                     </div>
-                    
+
                     <div class="line no-margin"></div>
-                    
+
                     <form action="#" class="form-horizontal inner-all">
                       <div class="form-group has-feedback no-margin">
                         <input class="form-control" type="text" placeholder="Agregar comentario...">
                         <button type="submit" class="btn btn-theme fa fa-pencil form-control-feedback"></button>
                       </div>
                     </form>
-                    
+
                   </div>
-                  
+
                 </div>
-                
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-</section>
-        
-        <!-- Import jQuery-->
-        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-        <!-- bootstrap -->
-        <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  </section>
 
-        <script src="../js/register.js"></script>
-        
+  <!-- Import jQuery-->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../js/register.js"></script>
+
 </body>
+
 </html>
