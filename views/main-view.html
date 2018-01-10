@@ -36,22 +36,25 @@
 						</span>
 					</div><!-- /input-group -->
 				</div>
-
+				<!-- Opciones de Navegación -->
 				<ul class="social-media-list pull-right text-center">
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Perfil</a></li>
-					<li><a href="#" class="dropdown-social-media" id="followers"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
-					<!-- <div class="dropdown-social-media" id="#followersDiv">
-						<div><img src="" alt=""></div>
-						<div><img src="" alt=""></div>
-						<div><img src="" alt=""></div>
-						<div><img src="" alt=""></div>
-						<div><img src="" alt=""></div>
-					</div> -->
-					<li><a href="#" class="dropdown-social-media" id="notifications"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
-					<!-- <div class="dropdown-social-media">
-						<p><span class="glyphicon glyphicon-alert alert-icon" aria-hidden="true"></span>¡Tienes un nuevo mensaje!</p>
-					</div> -->
+					<li class="dropdown" id="dropdown">
+						<a href="#" class="dropdown-toggle" id="followers" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right" id="dropdown-menu-followers">
+						  <li id="liNewFriend1" class=""><a href="#"><img src="../assets/img/user1_720.jpg" class="img-responsive little-image" alt="Nueva amiga"><span>Ana Kowalski<br>quiere ser tu amiga</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton1">Confirmar amistad</button></div></a></li>
+						  <li id="liNewFriend2" class=""><a href="#"><img src="../assets/img/user2_720.jpg" class="img-responsive little-image" alt="Nueva amigo"><span>Ricardo Mon-<br>taner quiere ser tu amigo</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton2">Confirmar amistad</button></div></a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" id="notifications"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right">
+						  <li><a href="#"><span class="glyphicon glyphicon-alert orange-icon" aria-hidden="true"></span> Tienes un nuevo mensaje</a></li>
+						  <li><a href="#"><img src="../assets/img/usuario_480.jpg" alt="Usuario1" class="img-responsive little-image"><span>Micaela ha dado like<br>a tu publicación</span></a></li>
+						  <li><a href="#">Tienes dos solicitudes de amistad</a></li>
+						</ul>
+					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
 						<ul class="dropdown-menu dropdown-menu-right">
@@ -144,6 +147,20 @@
 		</div>
 <!-- Import jQuery-->
 <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9gRL5pF8NpON8KuMlS8Pd_dXP_UXI2Kc",
+    authDomain: "misky-peru-5e127.firebaseapp.com",
+    databaseURL: "https://misky-peru-5e127.firebaseio.com",
+    projectId: "misky-peru-5e127",
+    storageBucket: "misky-peru-5e127.appspot.com",
+    messagingSenderId: "895715418066"
+  };
+  firebase.initializeApp(config);
+</script>
 <!-- bootstrap -->
 <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="../js/main-view.js"></script>

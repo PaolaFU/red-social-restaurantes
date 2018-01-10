@@ -91,13 +91,22 @@
     width: 100%;
   }
 
-  .dropdown-social-media {
-    /* background-color: #fff; */
-    border-radius: 6px;
+  .container-confirm-button {
+    margin-top: 0.4em;
   }
 
-  .alert-icon {
-    color: yellow;
+  .orange-icon {
+    color: #faa505;
+  }
+
+  .little-image {
+    display: inline-block;
+    width: 3em;
+    margin-right: 1em;
+  }
+
+  .dropdown-menu {
+    height: 200px;
   }
 
  /* Secciones */
