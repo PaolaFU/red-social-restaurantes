@@ -240,7 +240,6 @@
   width: 100%;
 }
 
-
 h5, .card-title {
   text-align: center;
 }
@@ -351,10 +350,10 @@ h5, .card-title {
   width: 30px;
   height: 30px;
 }
-/*Imagenes de comentario*/
-.img-seg {
-  width: 8em;
-  height: 8em;
+
+.img-post2 {
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -561,6 +560,12 @@ img:hover {
 #btn-agregar{
   background-color: #FA58F4;
 } */
+
+.img-seg{
+  width: 10em;
+  height: 10em;
+} 
+
 .btn-seguir{
   
   background-color: #eba279;
