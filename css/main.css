@@ -88,7 +88,16 @@
     color: red;
     display: inline-block;
     list-style: none;
-    width: 30%;
+    width: 100%;
+  }
+
+  .dropdown-social-media {
+    /* background-color: #fff; */
+    border-radius: 6px;
+  }
+
+  .alert-icon {
+    color: yellow;
   }
 
  /* Secciones */
@@ -159,6 +168,7 @@
 
 .divText {
   background-color: #FFF;
+  border-radius: 6px;
   width: 100%;
   height: 90px;
   color: #000;
@@ -173,7 +183,7 @@
 .main-view-third-section {
   background-color: #f16c25;
   border-color: #f16c25;
-  padding: 1em 0.5em 2.5em;
+  padding: 1em 0.5em 1em;
 }
 
 /* Cajas contenidas */
@@ -238,6 +248,10 @@
 
   .text-area {
     font-size: 1.3em;
+  }
+
+  .main-view-third-section {
+    padding: 1em 0.5em 2.5em;
   }
 
   .little-paragraph {

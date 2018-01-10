@@ -40,8 +40,18 @@
 				<ul class="social-media-list pull-right text-center">
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Perfil</a></li>
-					<li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="#" class="dropdown-social-media" id="followers"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
+					<!-- <div class="dropdown-social-media" id="#followersDiv">
+						<div><img src="" alt=""></div>
+						<div><img src="" alt=""></div>
+						<div><img src="" alt=""></div>
+						<div><img src="" alt=""></div>
+						<div><img src="" alt=""></div>
+					</div> -->
+					<li><a href="#" class="dropdown-social-media" id="notifications"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
+					<!-- <div class="dropdown-social-media">
+						<p><span class="glyphicon glyphicon-alert alert-icon" aria-hidden="true"></span>¡Tienes un nuevo mensaje!</p>
+					</div> -->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
 						<ul class="dropdown-menu dropdown-menu-right">
@@ -102,7 +112,7 @@
 						</div>
 						<div class="little-box pizza-ad center-block">
 							<img src="../assets/img/pizza.jpeg" alt="Anuncio sobre una pizza" class="img-responsive food-image">
-							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una reica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
+							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una rica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
 						</div>
 					</section>
 				</div>
@@ -118,11 +128,10 @@
 						<h4 class="modal-title" id="myModalLabel">Sube una foto</h4>
 					</div>
 					<div class="modal-body">
-						Mediante:
 						<form>
 							<div class="form-group">
-								<label for="exampleUrl">URL</label>
-								<input type="email" class="form-control" id="exampleUrl" placeholder="Inserta el link aquí">
+								<label for="exampleInputFile">Sube tu imagen aquí</label>
+								<input type="file" id="exampleInputFile">
 							</div>
 						</form>
 					</div>
