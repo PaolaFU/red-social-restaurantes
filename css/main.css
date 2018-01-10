@@ -13,7 +13,7 @@
   }
 
   .background {
-    background: radial-gradient(rgb(248, 248, 248), rgb(176, 247, 130), rgb(103, 245, 103));
+    background: radial-gradient(rgb(248, 248, 248), rgb(149, 245, 85), rgb(64, 240, 64));
   }
 
   .flex-body {
@@ -27,9 +27,10 @@
 }
   /*-------------------Styles login------------*/
 .containers-form{
-  background-color : #D3FAB8;
+  background-color : rgb(113, 241, 113);
   padding: 0.5em;
   margin-top: 3%;
+  
   
 }
 
