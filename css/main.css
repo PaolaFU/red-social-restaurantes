@@ -242,7 +242,7 @@ h5, .card-title {
   text-align: center;
 }
 .name{
-  color: red;
+  color: rgba(58, 92, 20, 0.89);
 }
 .profile-cover .cover {
   position: relative;
@@ -566,5 +566,5 @@ img:hover {
 
 .btn-seguir{
   
-  background-color: #eba279;
+  background-color: #2a974b;
 } 
