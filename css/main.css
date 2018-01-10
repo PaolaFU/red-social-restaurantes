@@ -147,11 +147,6 @@
 
 /* Estilos a la sección */
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> aafe3960a94b05bc0cb20c83cb1952a74f026899
 .section-container {
   padding-left: 0;
 }
@@ -254,7 +249,6 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 /*Style perfil.html*/
 
 /*Profile, parte superior*/
@@ -598,7 +592,6 @@ img:hover {
 .panel-seguidores{
   background: rgb(211, 235, 210);
 }
-=======
 /* Pequeñas imagenes */
 
 .picture {
@@ -644,4 +637,3 @@ img:hover {
     font-size: 1.2em;
   }
 }
->>>>>>> aafe3960a94b05bc0cb20c83cb1952a74f026899
