@@ -138,13 +138,13 @@
 /* Estilos al panel */
 
 .panel-default {
-  border-color: #f16c25;
+  border-color: #efdfa0;
 }
 
-.panel-orange {
+.panel-cream {
   word-wrap: break-word;
-  background-color: #f16c25;
-  border-color: #f16c25;
+  background-color: #efdfa0;
+  border-color: #efdfa0;
 }
 
 .panel-body .paragraph {
@@ -154,7 +154,7 @@
 }
 
 .panel-body .paragraph a {
-  color: #88d54c;
+  color: #a7601a;
   font-size: 1.1em;
 }
 
@@ -190,8 +190,8 @@
 /* Tercera sección */
 
 .main-view-third-section {
-  background-color: #f16c25;
-  border-color: #f16c25;
+  background-color: #efdfa0;
+  border-color: #efdfa0;
   padding: 1em 0.5em 1em;
 }
 
@@ -207,7 +207,7 @@
 }
 
 .little-paragraph {
-  background-color: #fadd05;
+  background-color: #b7da99;
   word-wrap: break-word;
   padding: 1em;
   text-align: justify;
