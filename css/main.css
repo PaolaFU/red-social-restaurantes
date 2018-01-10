@@ -4,23 +4,16 @@
     padding: 0;
   }
 
-<<<<<<< HEAD
-
-
-  
-  /* Clases para el elemento body */
-=======
   /* Vista Splash */
 
   /* Estilos para el elemento body */
->>>>>>> 19432c9f321e071bb9a08aec8a5d4bd6032b92b1
 
   .vh100 {
     height: 100vh;
   }
 
   .background {
-    background-color: skyblue;
+    background: radial-gradient(rgb(248, 248, 248), rgb(176, 247, 130), rgb(103, 245, 103));
   }
 
   .flex-body {
@@ -28,13 +21,16 @@
     flex-direction: column;
     justify-content: center;
   }
-
-<<<<<<< HEAD
+  .title-welcome{
+    font-size: 4em;
+    color: white;
+}
   /*-------------------Styles login------------*/
 .containers-form{
   background-color : #D3FAB8;
   padding: 0.5em;
   margin-top: 3%;
+  
 }
 
 .button-login{
@@ -48,25 +44,22 @@
 .buttons a:hover{
   color: #C8E64F;
 }
+/*
 .logo-desktop, .form-desktop{
   margin-top: 8em;
-}
+}*/
 /* Styles perfil.html */
 .backgroundImg{
   background-color: #96F662;
-=======
   /* Vista Principal */
+}
 
-  .flex-container {
-    display: flex;
-    align-items: center;
-  }
 
-  .wood-background {
+.wood-background {
     background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   /* Estilos al contenedor del logo y a este mismo*/
 
@@ -192,6 +185,17 @@
   margin-bottom: 0.8em;
 }
 
+.divText {
+  background-color: #FFF;
+  width: 90%;
+  height: 90px;
+  color: #000;
+  font-size: 1.5em;
+  margin: 0 auto 30px;
+  padding: 15px 15px 0;
+  word-wrap: break-word;
+}
+
 /* Tercera sección */
 
 .main-view-third-section {
@@ -223,5 +227,4 @@
 
 .pizza-link {
   cursor: pointer;
->>>>>>> 19432c9f321e071bb9a08aec8a5d4bd6032b92b1
 }
