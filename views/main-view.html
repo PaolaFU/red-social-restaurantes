@@ -40,7 +40,7 @@
 				<ul class="social-media-list pull-right text-center">
 					<li><a href="#">Inicio</a></li>
 					<li><a href="#">Perfil</a></li>
-					<li><a href="views/seguir.html"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a></li>
 					<li><a href="#"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
@@ -55,11 +55,11 @@
 		</nav>
 	</header>
 	<!-- Secciones -->
-	<div class="flex-container-section vh100">
+	<div class=" vh100 flex-container-section">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- Primera Sección -->
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 section-container">
+				<div class="col-xs-3 section-container">
 					<section class="text-center">
 						<div class="panel panel-default">
 							<div class="panel-body">
@@ -73,27 +73,28 @@
 					</section>
 				</div>
 				<!-- Segunda Sección -->
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 section-container">
+				<div class="col-xs-6 section-container">
 					<section>
 						<!-- Elemento div donde el usuario escribirá el mensaje-->
-						<div class="user-post-area">
-							<button type="button" class="btn btn-default pull-right download-button" data-toggle="modal" data-target="#myTextAreaModal">
+						<div class="user-message">
+							<button type="button" class="btn btn-default download-button pull-right" data-toggle="modal" data-target="#myTextAreaModal">
 								<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
 							</button>
 							<form>
 								<div class="form-group">
 									<textarea class="form-control text-area" id="exampleTextArea1" placeholder="Escribe una reseña"></textarea>
 						    </div>
-						    <!-- <br> -->
-						    <button type="submit" class="btn btn-default pull-right" id="publishButton">Publicar</button>
+						    <button type="submit" class="btn btn-default pull-right publish-button" id="publishButton">Publicar</button>
 				      </form>
 						</div>
+						<!-- Contenedor de los posts -->
 						<div id="divs-container">
+
 						</div>
 					 </section>
 				</div>
 				<!-- Tercera Sección -->
-				<div class="col-xs-3 col-sm-3 ol-md-3 col-lg-3 last-section-container">
+				<div class="col-xs-3 last-section-container">
 					<section class="main-view-third-section">
 						<div class="little-box top-five-box center-block">
 							<img src="../assets/img/top.jpg" alt="Top 5 Mejores Platos Peruanos" class="img-responsive food-image">
@@ -101,7 +102,7 @@
 						</div>
 						<div class="little-box pizza-ad center-block">
 							<img src="../assets/img/pizza.jpeg" alt="Anuncio sobre una pizza" class="img-responsive food-image">
-							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una rica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
+							<p class="pizza-ad-paragraph little-paragraph">Estás viendo televisión y de repente se te antojó una reica pizza. No esperes más y ven a Pizza Hut. Visita <a href="https://www.pizzahut.com.pe/Online" target="_blank" class="pizza-link">www.pizzahut.com.pe</a> para ver nuestras promociones.</p>
 						</div>
 					</section>
 				</div>
@@ -117,28 +118,13 @@
 						<h4 class="modal-title" id="myModalLabel">Sube una foto</h4>
 					</div>
 					<div class="modal-body">
-						<p>Mediante</p>
+						Mediante:
 						<form>
 							<div class="form-group">
 								<label for="exampleUrl">URL</label>
 								<input type="email" class="form-control" id="exampleUrl" placeholder="Inserta el link aquí">
 							</div>
 						</form>
-						<hr>
-						<span>o</span>
-						<hr>
-						<!-- <div class="">
-							<label>Carga tu imagen desde tu ordenador</label>
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myTextAreaModal">
-								<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
-							</button>
-						</div> -->
-						<div class="form-group">
-							<label for="uploadInputFile">Subir imagen</label>
-							<input type="file" id="uploadInputFile" accept="image/x-png,image/gif,image/jpeg">
-							<i class="fa fa-download" aria-hidden="true"></i>
-								<!-- <span class="glyphicon glyphicon-save" aria-hidden="true"></span> -->
-						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -147,41 +133,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- Import jQuery-->
-		<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script>
- // Initialize Firebase
- var config = {
-   apiKey: "AIzaSyA9gRL5pF8NpON8KuMlS8Pd_dXP_UXI2Kc",
-   authDomain: "misky-peru-5e127.firebaseapp.com",
-   databaseURL: "https://misky-peru-5e127.firebaseio.com",
-   projectId: "misky-peru-5e127",
-   storageBucket: "",
-   messagingSenderId: "895715418066"
- };
- firebase.initializeApp(config);
- var $databaseTable = firebase.database.ref('Imagenes');
- $('#uploadInputFile').change(function() {
-	 if(this.files && this.files[0]) {
-		 var $file = new FileReader();
-		 $file.on('load', function(event) {
-			 var $littleImage = $file.addClass('picture');
-			 $databaseTable.push({
-         // Dato que contendra la imagen original del usuario
-				 urlLarge:event.target.result
-				 // Dato que contendra la imagen modificada
-				 url: $littleImage
-			 });
-			 var $image = '</img src="">';
-			 var textArea = $('#exampleTextArea1');
-			 $image.appendTo(textArea);
-			 $image.attr('src', $littleImage);
-		 });
-		 $file.readAsDataURL(this.files[0]);
-	 }
- });
-</script>
+<!-- Import jQuery-->
+<script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
 <!-- bootstrap -->
 <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="../js/main-view.js"></script>
