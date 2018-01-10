@@ -102,10 +102,6 @@
 
 /* Estilos a la sección */
 
-.flex-container-section {
-  /* height: 83vh; */
-}
-
 .section-container {
   padding-left: 0;
 }
@@ -115,12 +111,6 @@
   padding-left: 15px;
 }
 
-.user-message {
-  background-color: #fff;
-  overflow: auto;
-  padding: 1em;
-  margin-top: 20px;
-}
 
 .download-button, .publish-button {
   margin-bottom: 0.8em;
@@ -229,10 +219,12 @@
 
 .brand-container {
   font-size: 1.4em;
+  width: 38%;
 }
 
 .social-media-list {
   font-size: 1.3em;
+  width: 38%;
 }
 
 .panel-body .paragraph {
@@ -246,5 +238,9 @@
 
   .text-area {
     font-size: 1.3em;
+  }
+
+  .little-paragraph {
+    font-size: 1.2em;
   }
 }
