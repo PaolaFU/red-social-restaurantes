@@ -59,12 +59,22 @@ $(document).ready(function() {
     }
   });
   // Evento aplicado al botón del modal para subir las imágenes
-  var $inputImage = $('#inputImage');
-  $saveChanges.on('click', function() {
-    debugger;
-    var $userImage = $input.val();
-    var $inputImageSrc = $inputImage.val();
-    $inputImageSrc = $userImage;
-    alert($inputImageSrc);
+  // var $inputImage = $('#inputImage');
+  // $saveChanges.on('click', function() {
+  //   debugger;
+  //   var $userImage = $input.val();
+  //   var $inputImageSrc = $inputImage.val();
+  //   $inputImageSrc = $userImage;
+  //   alert($inputImageSrc);
+  // });
+  $('#exampleInputFile').change(function() {
+    var reader = new FileReader();
+    reader.onload = function(event) {
+      var divsContainer = $('#divs-container');
+      var div = '<div><img src="_pub_" alt="" class="img-publicaciones"></div>';
+      var divReplace = div.replace('_pub_', event.target.result);
+      divsContainer.append(divReplace);
+    };
+    reader.readAsDataURL(this.files[0]);
   });
 });
