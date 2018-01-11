@@ -2,7 +2,7 @@
 
 ## **Descripción**
 
-Hoy en día encontrar restaurantes confiables donde se pueda comer ricobno es tan fácil, a veces  se va a uno por alguna recomendación, por algún plato de comida especial o simplemente para probar. Muchas veces salimos satisfechos, pero también ha pasado que la comida no fue rica y nos llevamos la mala experiencia de haber estado ahí.  Este mal rato se evitaría teniendo a la mano una red social con la cual, con un simple click, tendrías toda la información de diversos restaurantes.
+Hoy en día encontrar restaurantes confiables donde se pueda comer rico no es tan fácil, a veces  se va a uno por alguna recomendación, por algún plato de comida especial o simplemente para probar. Muchas veces salimos satisfechos, pero también ha pasado que la comida no fue rica y nos llevamos la mala experiencia de haber estado ahí.  Este mal rato se evitaría teniendo a la mano una red social con la cual, con un simple click, tendrías toda la información de diversos restaurantes.
 
 ## **Objetivo**
 
