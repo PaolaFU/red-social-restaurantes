@@ -1,5 +1,7 @@
 $(document).ready(function() {
+  /* Botones */ 
   var $startConversationButton = $('#startConversation');
+  var $
   $startConversationButton.on('click', function() {
     var $ws;
     $ws = new WebSocket('wss://echo.websocket.org');

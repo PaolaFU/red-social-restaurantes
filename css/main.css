@@ -75,9 +75,11 @@ background-color: #96F662;
 /* Estilos al contenedor del logo y a este mismo*/
 
 .navbar-default {
-  background-color: #ceaa89;
-  border-color: #ceaa89;
-  margin-bottom: 2em;
+  background-image: url('../assets/img/image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .flex-container {
