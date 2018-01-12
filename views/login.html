@@ -2,165 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Bootstrap.css-->
-    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <!-- tab icon -->
-    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
-    <!--font-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!--Css-->
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Misky Perú</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Bootstrap.css-->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!-- tab icon -->
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--Css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Misky Perú</title>
 </head>
 <!-- Login -->
 
 <body>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- mobile -->
-                <div class="col-xs-8 col-xs-offset-2 visible-xs">
-                    <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
-                </div>
-                <!--desktop -->
-
-                <div class="col-xs-4 col-xs-offset-4 hidden-xs logo-desktop" align="center">
-                    <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
-                </div>
-
-            </div>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- mobile -->
+        <div class="col-xs-8 col-xs-offset-2 visible-xs">
+          <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
         </div>
-    </section>
-    <!--Ingresar y registar-->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <!--mobile-->
-                <div class="col-xs-12" align="center">
-                    <!-- Login -->
-                    <div class="container-login" align="center">
-                        <form class="col-xs-12 col-md-6 col-md-offset-3  containers-form" align="center">
-                            <div class="input-group col-xs-12">
-                                <input id="email-login" type="text" class="form-control" name="email" placeholder="Correo electrónico">
-                            </div>
-
-                            <div class="input-group col-xs-12">
-                                <input id="password-login" name="password" type="password" value="" class="form-control" placeholder="password">
-                            </div>
-                            <div id="error-message"></div>
-                            <div class="checkbox " align=center>
-                                <label>
-                                    <input type="checkbox"> Recordar mis datos
-                                    <a href="">¿Olvidaste tu contraseña?</a>
-                                </label>
-                            </div>
-                            <a href="../views/main-view.html" type="button" class="btn btn-default button-login" id="btn-login">Ingresar</a>
-                        </form>
-
-                    </div>
-                    <!-- registro -->
-                    <div class="container-register" align="center">
-
-                        <form class="col-xs-12 col-md-6 col-md-offset-3 containers-form" align="center">
-                            <h4>¿Eres nuevo en Misky Perú </h4>
-                            <h4>
-                                <strong>Registrate</strong>
-                            </h4>
-                            <div class="input-group col-xs-12">
-                                <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo">
-                            </div>
-
-                            <div class="input-group col-xs-12">
-                                <input id="email-register" type="text" class="form-control" name="email" placeholder="Correo electrónico">
-                            </div>
-                            <div class="input-group col-xs-12">
-                                <input id="password-register" name="password" type="password" value="" class="form-control" placeholder="password">
-                            </div>
-                            <div id="error-message"></div>
-
-                            <a href="../views/main-view.html" type="button" class="btn btn-default  button-login" id="btn-register">Registrarte</a>
-                        </form>
-                    </div>
-                </div>
-                <!--desktop
-                        
-                        <div class="col-xs-6 hidden-xs logo-desktop" align ="center">
-                            <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
-                        </div>
-                        <div class="col-xs-6 pull-right hidden-xs form-desktop">
-                                <div class="container-login"  align ="center">
-                                        <form class="col-xs-12 containers-form">
-                                                <div class="input-group col-xs-12">
-                                                    <input id="email-login" type="text" class="form-control" name="email" placeholder="Correo o usuario">
-                                                </div>
-                                                
-                                                <div class="input-group col-xs-12">
-                                                    <input id="password" type="text" class="form-control" name="email" placeholder="password">
-                                                </div>
-                                                <div id="error-message"></div>
-                                                <div class="checkbox " align=center>
-                                                        <label>
-                                                            <input type="checkbox"> Recordar mis datos <a href="">¿Olvidate tu contraseña?</a> 
-                                                        </label>
-                                                </div>
-                                                <a href="" type="button" class="btn btn-default button-login" id="signup">Ingresar</a>
-                                        </form>
-                                        
-                                 </div>
-                                <div class="container-register" align = "center">
-                                    
-                                    <form class="col-xs-12 containers-form">
-                                            <h4>¿Eres nuevo en Misky Perú </h4>
-                                            <h4><strong>Registrate</strong></h4>
-                                            <div class="input-group col-xs-12">
-                                                <input id="name" type="text" class="form-control" name="name" placeholder="Nombre completo">
-                                            </div>
-                                            
-                                            <div class="input-group col-xs-12">
-                                                <input id="email-register" type="text" class="form-control" name="email" placeholder="Correo electrónico">
-                                            </div>
-                                            <div class="input-group col-xs-12">
-                                                <input id="password" type="text" class="form-control" name="email" placeholder="password">
-                                            </div>
-                                            <div id="error-message"></div>
-                                            
-                                            <a href="" type="button" class="btn btn-default  button-login" id="login">Registrarte</a>	
-                                    </form>
-                                </div>
-                        </div> -->
-            </div>
+        <!--desktop -->
+        <div class="col-xs-4 col-xs-offset-4 hidden-xs logo-desktop" align="center">
+          <img src="../assets/img/logo.png" alt="logo" class="img-responsive logo-misky">
         </div>
-
-    </section>
-
-
-    <!-- Import jQuery-->
-    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
-
-    <!-- Firebase -->
-
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCdxx880m4Ezk_Dlc84mE2zIrMe2lzH2Ek",
-            authDomain: "misky-peru-57ca6.firebaseapp.com",
-            databaseURL: "https://misky-peru-57ca6.firebaseio.com",
-            projectId: "misky-peru-57ca6",
-            storageBucket: "misky-peru-57ca6.appspot.com",
-            messagingSenderId: "157888336080"
-        };
-        firebase.initializeApp(config);
-    </script>
-
-
-    <!-- bootstrap -->
-    <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="../js/login.js"></script>
+      </div>
+    </div>
+  </section>
+  <!--Ingresar y registar-->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <!--mobile-->
+        <div class="col-xs-12" align="center">
+          <!-- Login -->
+          <a href="../views/main-view.html" type="button" class="btn btn-default button-login down" id="btn-login">Connect with Gmail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- Import jQuery-->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/login.js"></script>
 
 </body>
 
