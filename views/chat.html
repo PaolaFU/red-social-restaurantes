@@ -11,15 +11,73 @@
 	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
 	<!-- tab icon -->
 	<link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
-	<!--Css-->
-	<link rel="stylesheet" href="../css/chat.css">
+  <!--Css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/chat.css">
 	<title>Misky Perú</title>
 </head>
 <!-- Contenido de la página -->
-<body class="vh100 wood-background">
+<body class="vh100 wood-background margin-top-zero">
+  	<!-- Header -->
+	<header>
+      <!-- Barra de Navegación -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid flex-container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header brand-container">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo.png" alt="Logo de Misky Perú" class="img-responsive">
+            </a>
+            <div class="social-media-name"><a href="main-view.html">Misky Perú</a></div>
+          </div>
+          <!-- Form -->
+          <div class="search-input">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div>
+            <!-- /input-group -->
+          </div>
+          <!-- Opciones de Navegación -->
+          <ul class="social-media-list pull-right text-center">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li class="dropdown" id="dropdown">
+              <a href="#" class="dropdown-toggle" id="followers" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users fa-lg" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right" id="dropdown-menu-followers">
+                <li id="liNewFriend1" class=""><a href="#"><img src="../assets/img/user1_720.jpg" class="img-responsive little-image" alt="Nueva amiga"><span>Ana Kowalski<br>quiere ser tu amiga</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton1">Confirmar amistad</button></div></a></li>
+                <li id="liNewFriend2" class=""><a href="#"><img src="../assets/img/user2_720.jpg" class="img-responsive little-image" alt="Nueva amigo"><span>Ricardo Mon-<br>taner quiere ser tu amigo</span><div class="container-confirm-button"><button type="button" class="btn btn-success btn-sm center-block" id="confirmButton2">Confirmar amistad</button></div></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" id="notifications"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#"><span class="glyphicon glyphicon-alert orange-icon" aria-hidden="true"></span> Tienes un nuevo mensaje</a></li>
+                <li><a href="#"><img src="../assets/img/usuario_480.jpg" alt="Usuario1" class="img-responsive little-image"><span>Micaela ha dado like<br>a tu publicación</span></a></li>
+                <li><a href="#">Tienes dos solicitudes de amistad</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="login.html">Salir</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </header>
   <!-- Chat -->
   <div class="container">
-    <div class="row">
+    <div class="row flex-center">
       <div class="col-md-5">
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -97,7 +155,7 @@
   </div>
 </div>
 <div class="box-message">
-  <input type="button" value="Iniciar Conversación">
+  <input type="button" id="startConversation" value="Iniciar Conversación">
   <input type="text" id="chat-user-message">
   <input type="button" value="Enviar Mensaje">
 </div>
