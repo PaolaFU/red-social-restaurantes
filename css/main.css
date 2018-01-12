@@ -67,10 +67,17 @@
 }
 
   /* Estilos al contenedor del logo y a este mismo*/
+  
+  .navbar {
+    border: transparent;
+  }
 
   .navbar-default {
-    background-color: #ceaa89;
-    border-color: #ceaa89;
+    background-image: url('../assets/img/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-color: transparent;
+    background-color: transparent; 
     margin-bottom: 0;
   }
 
@@ -136,6 +143,7 @@
     color: #9ed694;
     display: inline-block;
     list-style: none;
+    text-decoration: none;
     width: 100%;
   }
 
@@ -248,6 +256,15 @@
   padding: 15px 15px 0;
   word-wrap: break-word;
 }
+
+.img-publicaciones {
+  width: 450px;
+  margin-top: 50px;
+}
+
+.img-publicaciones:hover {
+  opacity: 1;
+} 
 
 /* Tercera sección */
 
@@ -606,15 +623,6 @@ img:hover {
 .text-muted{
   color: black;
 }
-/*
-#adon{
-  background-color: #D0A9F5;
-}
-
-#btn-agregar{
-  background-color: #FA58F4;
-} */
-
 .img-seg{
   width: 10em;
   height: 10em;

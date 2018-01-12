@@ -13,6 +13,7 @@ $(document).ready(function() {
   var $liMessage = $('#liMessage');
   var $input = $('#exampleInputFile');
   var $saveChanges = $('#button-save-changes');
+  var $inputFile = $('#exampleInputFile');
   // Evento para el elemento donde se postean las reseñas
   $textArea.on('input', function() {
     if ($(this).val() !== '' && $(this).val().trim().length !== 0) {
@@ -59,12 +60,15 @@ $(document).ready(function() {
     }
   });
   // Evento aplicado al botón del modal para subir las imágenes
-  var $inputImage = $('#inputImage');
-  $saveChanges.on('click', function() {
-    debugger;
-    var $userImage = $input.val();
-    var $inputImageSrc = $inputImage.val();
-    $inputImageSrc = $userImage;
-    alert($inputImageSrc);
+  $inputFile.change(function() {
+    var $reader = new FileReader();
+    $reader.onload = function(event) {
+      console.log(event.target.result)
+      var $divsContainer = $('#divs-container');
+      var $div = '<div><img src="_pub_" alt="" class="img-publicaciones center-block img-responsive"></div>';
+      var $divReplace = $div.replace('_pub_', event.target.result);
+      $divsContainer.append($divReplace);
+    };
+    $reader.readAsDataURL(this.files[0]);
   });
 });
