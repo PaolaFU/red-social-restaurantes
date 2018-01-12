@@ -15,7 +15,7 @@ $(document).ready(function() {
   var $saveChanges = $('#button-save-changes');
   // Evento para el elemento donde se postean las reseñas
   $textArea.on('input', function() {
-    if ($(this).val() !== '') {
+    if ($(this).val() !== '' && $(this).val().trim().length !== 0) {
       console.log($(this).val().length);
       $button.removeAttr('disabled');
     } else {
