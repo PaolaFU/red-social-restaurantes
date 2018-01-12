@@ -24,7 +24,11 @@
   .title-welcome{
     font-size: 4em;
     color: white;
-}
+  }
+  
+  .margin-top-zero {
+    margin-top: 0;
+  }
   /*-------------------Styles login------------*/
 .containers-form{
   background-color : rgb(113, 241, 113);
@@ -66,12 +70,19 @@
 
   .navbar-default {
     background-color: #ceaa89;
-    /*border-color: #582a0b;*/
+    border-color: #ceaa89;
     margin-bottom: 0;
   }
 
+  .flex-container {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .brand-container {
-    width: 42%;
+    width: 30%;
     display: inline-block;
   }
 
@@ -103,7 +114,7 @@
     display: inline-block;
     line-height: 50px;
     margin-bottom: 0;
-    width: 35%;
+    width: 30%;
   }
 
   .social-media-list li {
@@ -176,13 +187,15 @@
 
 .panel-body .paragraph {
   border-bottom: 1px solid black;
-  line-height: 60px;
   line-height: 40px;
+  width: 100%; 
+  margin-left: 0; 
 }
 
 .panel-body .paragraph a {
   color: #a7601a;
   font-size: 1.1em;
+  display: block;
 }
 
 /* Segunda sección */
@@ -238,6 +251,8 @@
   word-wrap: break-word;
   padding: 1em;
   text-align: justify;
+  width: 100%;
+  margin-left: 0;
 }
 
 .pizza-ad-paragraph {
@@ -590,28 +605,15 @@ img:hover {
 .panel-seguidores{
   background: rgb(211, 235, 210);
 }
-/* Pequeñas imagenes */
-
-.picture {
-  width: 55em;
-  height: auto;
-}
-
 
 @media (min-width: 768px) {
 
-.flex-container {
-  padding: 10px 15px;
-}
-
 .brand-container {
   font-size: 1.4em;
-  width: 38%;
 }
 
 .social-media-list {
   font-size: 1.3em;
-  width: 38%;
 }
 
 .panel-body .paragraph {
