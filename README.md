@@ -22,6 +22,8 @@ Hoy en día encontrar restaurantes confiables donde se pueda comer rico no es ta
 
 Esta red social fue creada para que los usuarios obtengan información confiable de nuestra parte o de otros usuarios, garántizandoles una buena experiencia y haciéndolos sentir seguros con la decisión tomada. Asimismo, posee versión móvil y desktop para que sea accesible desde cualquier parte donde se esté.
 
+  ![Modal Inicia Sesión](assets/img/red-social.gif)
+
 ## **Conocimientos Técnicos**
 
 * Grid System
