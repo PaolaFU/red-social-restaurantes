@@ -59,11 +59,10 @@ $(document).ready(function() {
       $ul.addClass('dropdown-menu');
     }
   });
-  // Evento aplicado al botón del modal para subir las imágenes
+  // Evento aplicado al input de tipo file del modal para subir las imágenes
   $inputFile.change(function() {
     var $reader = new FileReader();
     $reader.onload = function(event) {
-      console.log(event.target.result)
       var $divsContainer = $('#divs-container');
       var $div = '<div><img src="_pub_" alt="" class="img-publicaciones center-block img-responsive"></div>';
       var $divReplace = $div.replace('_pub_', event.target.result);
