@@ -1,8 +1,12 @@
-# ** Producto final: Misky Perú**
+# **Producto final: Misky Perú**
 
 ## **Desarollo  del proyecto**
 
-Para crear la red social se ha realizado entrevistas face to face y encuestas  por internet para conocer a nuestro usuario y así ofrecerle una mejor experiencia.
+Se realizó una lluvia de ideas para ver que tema  se podría realizar, Una  vez definido  se empezó a indagar y buscar todo la información referente para identificar que el tema era  viable.
+
+Para crear la red social se realizó entrevistas face to face y encuestas  por internet para conocer a nuestro usuario y así ofrecerle una mejor experiencia.
+
+   * Encuesta y resultados: https://goo.gl/forms/pcg4uVzgS45q0TvL2
 
 ## **Prototipos iniciales**
 
@@ -52,7 +56,7 @@ Esta red social fue creada para que los usuarios obtengan información confiable
 
 * Por último, se puede acceder al perfil del usuario al ingresar a la vista perfil(ver brarra de navegación), dondé se puede observar las publicaciones que hizo el usuario.
 
-** Integrantes**
+## **Integrantes**
 
 * Paola Flores
 * Araceli Gutarra
