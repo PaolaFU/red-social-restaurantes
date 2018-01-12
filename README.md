@@ -28,12 +28,11 @@ Esta red social fue creada para que los usuarios obtengan información confiable
 
 * Github
 
+* Websocket
+
 ## **Prototipos iniciales**
 
-
-
 ![Modal Inicia Sesión](assets/img/imagen2.jpg)
-
 
 ## **Flujo de la aplicación**
 
