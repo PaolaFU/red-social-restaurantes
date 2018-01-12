@@ -58,14 +58,11 @@ margin-top: 3em;
 color: rgb(230, 79, 79);
 background: #efdfa0;
 }
-/*
-.logo-desktop, .form-desktop{
-margin-top: 8em;
-}*/
-/* Styles perfil.html */
+
 .backgroundImg{
 background-color: #96F662;
 /* Vista Principal */
+
 }
 
 
@@ -80,7 +77,7 @@ background-color: #96F662;
 .navbar-default {
   background-color: #ceaa89;
   border-color: #ceaa89;
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 
 .flex-container {
@@ -299,7 +296,7 @@ cursor: pointer;
 
 /*Profile, parte superior*/
 .panel-body{
-background-color: rgb(113, 241, 113);
+background-color: #efdfa0;
 }
 .profile-cover {
 width: 100%;
@@ -309,7 +306,7 @@ h5, .card-title {
 text-align: center;
 }
 .name{
-color: rgba(58, 92, 20, 0.89);
+color: #a7601a;
 }
 .profile-cover .cover {
 position: relative;
@@ -393,7 +390,7 @@ background-color: rgb(113, 241, 113);
 }
 
 #panel-lila {
-background-color: rgba(34, 238, 62, 0.38);
+background-color: white;
 }
 
 .profile-cover .cover ul.cover-menu li a i {
@@ -534,6 +531,11 @@ margin-top: 5px;
 margin-bottom: 0;
 }
 
+.btn-success {
+  color: #fff;
+  background-color: #9ed694;
+  
+}
 .pagination.pagination-split li {
 display: inline-block;
 margin-right: 3px;
@@ -606,23 +608,16 @@ width: 5em;
 height: 5em;
 }
 
+
 img:hover {
 opacity: 0.5
 }
 .h4{
-color: rgb(14, 150, 14);
+color: #a7601a;
 }
 .text-muted{
 color: black;
 }
-/*
-#adon{
-background-color: #D0A9F5;
-}
-
-#btn-agregar{
-background-color: #FA58F4;
-} */
 
 .img-seg{
 width: 10em;
@@ -630,12 +625,11 @@ height: 10em;
 } 
 
 .btn-seguir{
-
-background-color: #88c582;
+width: 6em;
+color: white;
+background-color: #ceaa89;
 } 
-.panel-seguidores{
-background: rgb(211, 235, 210);
-}
+
 
 @media (min-width: 768px) {
 
@@ -668,3 +662,4 @@ line-height: 60px;
   font-size: 1.2em;
 }
 
+}
