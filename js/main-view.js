@@ -32,6 +32,8 @@ $(document).ready(function() {
       $div.append($post);
       $divsContainer.append($div);
       $div.addClass('divText');
+      $('.divText').last().insertBefore($('.divText').first());
+      $textArea.focus();
     });
   }
   // Evento al confirmar una solicitud de amistad
