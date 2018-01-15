@@ -388,13 +388,15 @@ text-decoration: none;
 /*Zona central (paneles y comentarios)*/
 /*Boton postear*/
 #npost {
-background-color: rgb(113, 241, 113);
+background-color: #efdfa0;
 border-bottom: none;
 margin-top: 0.5em;
+color: black;
+border: 0;
 }
 
 #btn-purple {
-background-color: rgb(113, 241, 113);
+background-color: rgb(241, 113, 113);
 }
 
 #panel-lila {
