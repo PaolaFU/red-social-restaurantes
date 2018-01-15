@@ -28,11 +28,20 @@ $(document).ready(function() {
       event.preventDefault();
       var $divsContainer = $('#divs-container');
       var $div = $('<div></div>');
+      var $littleDiv = $('<div></div>');
       var $post = $textArea.val();
+      var $hours = moment().format('LT');
+      $littleDiv.append($hours);
+      $littleDiv.addClass('littleDiv');
+      var $spacing = '<br>';
       $div.append($post);
+      $div.append($spacing);
+      $div.append($littleDiv);
       $divsContainer.append($div);
       $div.addClass('divText');
       $('.divText').last().insertBefore($('.divText').first());
+      var $textAreaContent = $('textarea');
+      $textAreaContent.val(' ');
       $textArea.focus();
     });
   }
