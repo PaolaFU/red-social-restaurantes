@@ -5,10 +5,9 @@ $(document).ready(function() {
   var $inputChat = $('#chat-user-message');
   var $ws;
   $startConversationButton.on('click', function() {
-    $ws = new WebSocket('wss://ws.achex.ca/');
+    $ws = new WebSocket('wss://echo.websocket.org');
     $ws.onopen = function() {
       alert('Conexión abierta. Puedes enviar mensajes.');
-      $ws.send('{'setID':'MichatRoom', 'paswdd':'12345'}');
     };
   
     $ws.onmessage = function(messages) {
