@@ -31,20 +31,26 @@ $(document).ready(function() {
       var $littleDiv = $('<div></div>');
       var $post = $textArea.val();
       var $hours = moment().format('LT');
-      $littleDiv.append($hours);
+      localStorage.time = $hours;
+      $littleDiv.append(localStorage.time);
       $littleDiv.addClass('littleDiv');
       var $spacing = '<br>';
-      $div.append($post);
-      $div.append($spacing);
+      localStorage.spacing = '<br>';
+      localStorage.userPosts = $post;
+      $div.append(localStorage.userPosts);
+      $div.append(localStorage.spacing);
       $div.append($littleDiv);
+      localStorage.div = $div;
       $divsContainer.append($div);
       $div.addClass('divText');
       $('.divText').last().insertBefore($('.divText').first());
       var $textAreaContent = $('textarea');
       $textAreaContent.val(' ');
+      $button.attr('disabled', true);
       $textArea.focus();
     });
   }
+  console.log(localStorage.proof = 'Hi, my dear. I`m Araceli');
   // Evento al confirmar una solicitud de amistad
   $dropdown.on('click', function() {
     var $alert;
